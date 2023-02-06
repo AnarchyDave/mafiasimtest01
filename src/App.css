@@ -1,0 +1,78 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+legend {
+    appearance: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/*ENDRESET*/
+header nav ul li,
+footer nav ul li {
+    cursor: pointer;
+}
+
+header nav ul li,
+footer nav ul li {
+    float: left;
+    display: block;
+    width: 20%;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+}
+
+main {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 2px solid red;
+    min-height: calc(100vh - 6rem);
+}
+
+div.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+    left: 5vw;
+    bottom: 5vh;
+    visibility: hidden;
+    opacity: 0;
+}
+div.modal.visible{
+    visibility: visible;
+    opacity: 1;
+}
